@@ -1,0 +1,56 @@
+.instructions {
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+
+.instructions.light-theme {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.instructions.dark-theme {
+  background: rgba(40, 40, 40, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.instructions h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.light-theme .instructions h3 {
+  color: #1b5e20;
+}
+
+.dark-theme .instructions h3 {
+  color: #81c784;
+}
+
+.instructions ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.instructions li {
+  padding: 8px 0;
+  padding-left: 24px;
+  position: relative;
+}
+
+.instructions li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+}
+
+.light-theme .instructions li::before {
+  color: #4caf50;
+}
+
+.dark-theme .instructions li::before {
+  color: #66bb6a;
+}
+

@@ -1,0 +1,22 @@
+{
+  "id": 1766578343576,
+  "created_at": "2025-12-24T15:12:23.576523",
+  "messages": [
+    {
+      "content": "Hello",
+      "role": "user"
+    },
+    {
+      "content": "Hello! How can I assist you today?",
+      "role": "assistant"
+    },
+    {
+      "role": "user",
+      "content": "Do you give any career advice? and what type?"
+    },
+    {
+      "role": "assistant",
+      "content": "# Career Advice at Cambridge School of Visual & Performing Arts\n\nThe Cambridge School of Visual & Performing Arts provides comprehensive career advice and guidance to students, which includes:\n\n- **Higher Education Guidance**: Support for students applying to universities, including assistance with UCAS applications and portfolio development.\n- **Impartial Advice**: Guidance is offered in an impartial manner, helping students explore various career options, including those outside of university.\n- **Career Education Programs**: Programs designed to enhance self-awareness, opportunity awareness, and career management skills.\n- **Workshops and Taster Programs**: Opportunities for students to engage with visiting lecturers and sample different career options before making decisions.\n- **Career Research Placements**: Practical experiences that allow students to explore potential career paths.\n- **Support for Alternative Futures**: Assistance for students who may choose paths other than university, including business apprenticeships and other career routes.\n\nThe policy emphasizes the importance of providing accessible, client-centered, and confidential career guidance, ensuring that all students receive the support they need to make informed decisions about their futures.\n\n#### Sources\nPDF Index: \"CAMBRIDGE SCHOOL OF VISUAL & PERFORMING ARTS - Careers and Higher Education Guidance Policy\""
+    }
+  ]
+}

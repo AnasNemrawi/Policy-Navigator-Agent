@@ -1,0 +1,131 @@
+.input-section {
+  padding: 8px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.input-section.light-theme {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.input-section.dark-theme {
+  background: rgba(40, 40, 40, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.input-group {
+  margin-bottom: 8px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.light-theme .input-group label {
+  color: #1b5e20;
+}
+
+.dark-theme .input-group label {
+  color: #81c784;
+}
+
+.url-input,
+.question-input {
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 13px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  resize: vertical;
+}
+
+.light-theme .url-input,
+.light-theme .question-input {
+  background: white;
+  color: #333;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.light-theme .url-input:focus,
+.light-theme .question-input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+.dark-theme .url-input,
+.dark-theme .question-input {
+  background: #2a2a2a;
+  color: #e0e0e0;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark-theme .url-input:focus,
+.dark-theme .question-input:focus {
+  outline: none;
+  border-color: #66bb6a;
+  box-shadow: 0 0 0 3px rgba(102, 187, 106, 0.1);
+}
+
+.url-input:disabled,
+.question-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.question-input {
+  min-height: 36px;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.clear-btn,
+.send-btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clear-btn {
+  background: #f44336;
+  color: white;
+}
+
+.clear-btn:hover:not(:disabled) {
+  background: #da190b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.send-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.send-btn:hover:not(:disabled) {
+  background: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.clear-btn:disabled,
+.send-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+

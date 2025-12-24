@@ -1,0 +1,44 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+  transition: background 0.3s ease;
+}
+
+/* Light Theme */
+.app.light-theme {
+  background: linear-gradient(135deg, #f0f9f4 0%, #e8f5e9 100%);
+  color: #1b5e20;
+}
+
+/* Dark Theme */
+.app.dark-theme {
+  background: linear-gradient(135deg, #3a3a3a 0%, #4a4a4a 100%);
+  color: #f0f0f0;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 280px;
+  padding: 20px 40px;
+  max-width: calc(100% - 280px);
+  transition: margin-left 0.3s ease;
+}
+
+.divider {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme .divider {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+

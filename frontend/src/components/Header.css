@@ -1,0 +1,25 @@
+.header {
+  margin-bottom: 24px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.light-theme .header-title {
+  color: #1b5e20;
+}
+
+.dark-theme .header-title {
+  color: #81c784;
+}
+
+.header-subtitle {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
