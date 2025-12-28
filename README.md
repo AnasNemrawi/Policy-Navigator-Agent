@@ -182,7 +182,7 @@ The React frontend provides:
 5. **Important**: After running the agent creation cell, copy the `AGENT_ID` from the output and update `config.py`:
 
    ```python
-   AGENT_ID = "69479134a87cf6b5e1ae8f71"  # Your actual agent ID
+   AGENT_ID = "AGENT_API_KEY"  # Your actual agent ID
    ```
 6. Test the agent with sample queries in the notebook
 
@@ -391,24 +391,6 @@ Edit `config.py` to configure:
 - [ ] **Database Expansion**: Add more structured data sources
 - [ ] **Custom Data Sources**: Allow users to upload their own documents
 - [ ] **Version Control**: Track changes to knowledge base over time
-
-## 🧪 Testing
-
-Run the setup verification script:
-
-```bash
-python test_setup.py
-```
-
-This will check:
-
-- Python version
-- Configuration file
-- Backend dependencies
-- Sessions folder
-- Backend structure
-
-For detailed testing instructions, see `TESTING.md`.
 
 ## 📝 Notes
 
