@@ -3,9 +3,10 @@ import './ExamplePrompts.css';
 
 const ExamplePrompts = ({ darkTheme, onSelectPrompt }) => {
   const examples = [
-    "What are the federal requirements for educational guidance programs?",
+    "What is the policy for academic transcripts at Cambridge School?",
     "What are the responsibilities of an SEA and an LEA for preparing a report card?",
-    "Explain the Every Student Succeeds Act"
+    "Explain the Every Student Succeeds Act",
+    "Save a note about ESEA requirements"
   ];
 
   return (

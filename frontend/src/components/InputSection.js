@@ -14,6 +14,13 @@ const InputSection = ({ onSend, onClear, processing, darkTheme }) => {
     }
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      handleSubmit(e);
+    }
+  };
+
   return (
     <div className={`input-section ${darkTheme ? 'dark-theme' : 'light-theme'}`}>
       <form onSubmit={handleSubmit}>
@@ -36,6 +43,7 @@ const InputSection = ({ onSend, onClear, processing, darkTheme }) => {
             id="question-input"
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
+            onKeyDown={handleKeyDown}
             placeholder="Ask a question about education policy..."
             rows="3"
             disabled={processing}

@@ -100,9 +100,29 @@ The `RAG_knowledge_assistant.ipynb` notebook is the foundation of the system. It
     - URLs → Web Scraper only
     - Cambridge School/CSVPA questions → PDF Index only
     - ESEA/Report Card questions → SQL Database only
+    - "Save this" / "Remind me" → Note Saver Tool
+    - "Show my notes" / "List notes" → List Notes Tool
+    - "Read note" / "Open note" → Read Note Tool
     - General questions → PDF Index → SQL Database → Web Scraper (fallback)
   - **Citation Management**: Automatically includes source citations
   - **Context Awareness**: Maintains conversation history for follow-up questions
+
+#### 5. **External Action Tools (Note Management System)**
+
+**This system "External Tools" allow the agent to perform read/write actions on the file system.**
+
+- **Tools Included**:
+  1. **Note Saver**: Saves summaries/reminders to `user_notes/` (Write Action)
+  2. **List Notes**: Retrieves a list of all saved files (Read Action)
+  3. **Read Note**: Opens and reads specific file content (Read Action)
+- **Technology**:
+  - Custom Python function tools
+  - `ModelFactory.create_utility_model()`
+- **Features**:
+  - Persistent storage of user insights
+  - Timestamped file creation
+  - Directory management and security checks
+  - Demonstrates agent capability to **take action** beyond simple retrieval
 
 ### Backend API
 
@@ -280,7 +300,15 @@ Policy-Navigator-Agent/
 └── README.md                       # This file
 ```
 
-## 🔧 Configuration
+## � Data Sources
+
+The knowledge base is built from the following authoritative sources:
+
+- **ESEA Report Card Guidelines**: [U.S. Department of Education Data](https://www2.ed.gov/records/ReportCards/index.html) - Comprehensive dataset on state and local report card requirements.
+- **Education Policy Documents**: [Cambridge School Policies](https://www.csvpa.com/about/policies) - Internal PDF documents regarding careers and educational guidance.
+- **Federal Education Laws**: [U.S. Department of Education](https://www.ed.gov/) - Real-time policy information scraped directly from official government sources.
+
+## �🔧 Configuration
 
 Edit `config.py` to configure:
 
@@ -345,7 +373,66 @@ Edit `config.py` to configure:
 5. **Formatting**: Response is formatted in Markdown with proper structure
 6. **Display**: Frontend renders formatted response with citations
 
-## 🔮 Future Improvements
+## � Example Scenarios
+
+### Scenario 1: Federal Policy Query
+
+**User:** "What are the responsibilities of an SEA for preparing a report card?"
+**Agent:**
+
+> ### SEA Report Card Responsibilities
+>
+> State Education Agencies (SEAs) have specific mandates under the ESEA:
+>
+> - **Data Collection**: SEAs must collect valid and reliable data from LEAs.
+> - **Public Dissemination**: They are responsible for preparing and disseminating the State report card to the public.
+> - **Format Requirements**: The report must be concise, understandable, and accessible to parents.
+>
+> #### Sources
+>
+> - ESEA Report Card Database - State Responsibilities Table
+
+### Scenario 2: School-Specific Guidance
+
+**User:** "What is the policy for academic transcripts at Cambridge School?"
+**Agent:**
+
+> ### Academic Transcript Policy
+>
+> The Cambridge School of Visual & Performing Arts maintains strict guidelines for transcripts:
+>
+> 1. **Issuance**: Transcripts are issued upon successful completion of the program.
+> 2. **Requests**: Students must submit a formal request to the registry.
+> 3. **Withholding**: Transcripts may be withheld if there are outstanding financial obligations.
+>
+> #### Sources
+>
+> - Careers and Educational Guidance Policy 2025-26
+
+### Scenario 3: External Action (Note Management)
+
+**User:** "Save a note about these transcript requirements."
+**Agent:**
+
+> I have successfully saved a note about **Academic Transcript Policy** to `user_notes/note_2026-01-02_14-30-00.txt`.
+>
+> #### Sources
+>
+> - User Notes System
+
+**User:** "List my notes."
+**Agent:**
+
+> Found the following notes:
+>
+> - note_2026-01-02_14-30-00.txt
+> - note_2026-01-01_09-15-00.txt
+>
+> #### Sources
+>
+> - User Notes System
+
+## �🔮 Future Improvements
 
 ### Model & Knowledge Base Enhancements
 

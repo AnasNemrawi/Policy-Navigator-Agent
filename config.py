@@ -1,10 +1,10 @@
 # Application Configuration
 
 # Agent Configuration
-AGENT_ID = "Add the agent id from the notbook here"
+AGENT_ID = "please_replace_with_your_actual_agent_id" # from the notbook file after running it
 
 # API Configuration
-AIXPLAIN_API_KEY = "Add your api key here"
+AIXPLAIN_API_KEY = "Please_replace_with_your_actual_api_key"
 
 # File Paths
 SESSIONS_FOLDER = "sessions/Saved_Sessions"

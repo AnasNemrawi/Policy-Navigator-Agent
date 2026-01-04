@@ -1,0 +1,14 @@
+{
+  "id": 1767363722997,
+  "created_at": "2026-01-02T17:22:02.997583",
+  "messages": [
+    {
+      "content": "What is the policy for academic transcripts at Cambridge School?",
+      "role": "user"
+    },
+    {
+      "content": "### Academic Transcript Policy at Cambridge School\n\nRequests for academic transcripts must be made in writing and will incur an additional cost. The requests should be directed to Student Services at the following email addresses:\n- studentcommunications@catscambridge.com\n- studentservices@csvpa.com (as appropriate).\n\nThe academic transcript may take up to three weeks to complete.\n\n#### Sources\n- Cambridge School of Visual & Performing Arts - Careers and Higher Education Guidance Policy",
+      "role": "assistant"
+    }
+  ]
+}
