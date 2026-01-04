@@ -296,7 +296,6 @@ Policy-Navigator-Agent/
 │   └── ESEA_Report_Card_Guidelines.db
 ├── sessions/
 │   └── Saved_Sessions/             # Saved conversation sessions
-├── test_setup.py                   # Setup verification script
 └── README.md                       # This file
 ```
 
@@ -460,17 +459,6 @@ Edit `config.py` to configure:
 - [ ] **Voice Input**: Add speech-to-text for queries
 - [ ] **Mobile App**: Native mobile application
 
-### Technical Improvements
-
-- [ ] **Caching**: Implement response caching for common queries
-- [ ] **Rate Limiting**: Add rate limiting to prevent abuse
-- [ ] **Authentication**: User accounts and authentication
-- [ ] **Analytics**: Track usage patterns and popular queries
-- [ ] **A/B Testing**: Test different agent configurations
-- [ ] **Monitoring**: Add logging and monitoring for production use
-- [ ] **Docker Support**: Containerize the application for easy deployment
-- [ ] **CI/CD Pipeline**: Automated testing and deployment
-
 ### Data & Integration
 
 - [ ] **Real-time Updates**: Automatically update knowledge base from new sources
@@ -498,6 +486,8 @@ See `LICENSE` file for details.
 ## 🙏 Acknowledgments
 
 - **aiXplain Platform** - For providing the AI infrastructure and SDK
+- **React** - For the frontend user interface
+- **Flask** - For the backend API server
 
 ---
 

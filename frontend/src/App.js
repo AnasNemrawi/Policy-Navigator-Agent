@@ -197,6 +197,9 @@ function App() {
           processing={processing}
           darkTheme={darkTheme}
         />
+        <div className="footer-text" style={{ textAlign: 'center', padding: '10px', fontSize: '0.8rem', opacity: 0.7 }}>
+          Built with humain ❤️ to provide AI guidance
+        </div>
       </div>
       {notification && (
         <Notification
